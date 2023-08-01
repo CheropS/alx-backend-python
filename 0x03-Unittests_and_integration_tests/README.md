@@ -24,4 +24,6 @@ python -m unittest path/to/test_file.py
         ** Implementing TestAccessNestedMap.test_access_nested_map_exception
         ** Defining the TestGetJson(unittest.TestCase) class and implement the TestGetJson.test_get_json method to test that utils.get_json returns the expected result.
         ** Implementing the TestMemoize(unittest.TestCase) class with a test_memoize method.
-* [Utils.py](utils.py "Utils.py")
+* [4. Parameterize and patch as decorators](test_client.py "4. Parameterize and patch as decorators")
+        ** Use @patch as a decorator to make sure get_json is called once with the expected argument but make sure it is not executed.
+        ** Use @parameterized.expand as a decorator to parametrize the test with a couple of org examples to pass to GithubOrgClient, in this order: google & abc.
